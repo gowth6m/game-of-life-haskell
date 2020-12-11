@@ -96,7 +96,7 @@ oneEvolutionStep ps
     
 -- Create potential infinite list of evolutions by applying oneEvolutionStep recursively and appending to list.
 evolution :: [Point] -> [[Point]]
-evolution = iterate evolve
+evolution = iterate oneEvolutionStep
 
 --------------------------------------------------------------------------------
 -- ### MAIN FUNCTION ###
